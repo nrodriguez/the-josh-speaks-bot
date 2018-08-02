@@ -1,10 +1,17 @@
 const Discord = require('discord.io');
-const auth = require('./auth.json');
 const quotes = require('./quotes.json');
+
+let token;
+
+try{
+    token = require('./auth.json').token;
+} catch (err) {
+    token = process.env.token;
+}
 
 // Initialize Discord Bot
 const bot = new Discord.Client({
-    token: process.env.token || auth.token,
+    token,
     autorun: true
 });
 
