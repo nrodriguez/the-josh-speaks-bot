@@ -1,0 +1,13 @@
+{
+    "name": "the-josh-speaks-bot",
+    "version": "1.0.0",
+    "description": "The Josh Speaks Bot",
+    "main": "bot.js",
+    "author": "justneph",
+    "dependencies": {
+        "discord.io": "github:woor/discord.io#gateway_v6"
+    },
+    "devDependencies": {
+        "eslint": "^5.2.0"
+    }
+}
