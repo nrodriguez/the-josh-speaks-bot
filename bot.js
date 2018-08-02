@@ -4,7 +4,7 @@ const quotes = require('./quotes.json');
 
 // Initialize Discord Bot
 const bot = new Discord.Client({
-    token: auth.token || process.env.token,
+    token: process.env.token || auth.token,
     autorun: true
 });
 
